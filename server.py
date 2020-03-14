@@ -5,7 +5,7 @@ from pymongo import MongoClient
 import gridfs
 import os
 
-UPLOAD_FOLDER = os.getcwd()c  
+UPLOAD_FOLDER = os.getcwd()
 ALLOWED_EXTENSIONS = set(['txt', 'pdf', 'png', 'jpg', 'jpeg', 'gif'])
 
 app = Flask(__name__)
