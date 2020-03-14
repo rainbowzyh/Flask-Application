@@ -40,10 +40,6 @@ def upload_file():
 			return redirect(request.url)
 		if file and allowed_file(file.filename):
 			filename = secure_filename(file.filename)
-			print(1, file)
-			print(2, filename)
-			# print(os.path.join(app.config['UPLOAD_FOLDER'], filename))
-			
 			file.save(os.path.join(app.config['UPLOAD_FOLDER'], filename))
 			connect(filename)
 
